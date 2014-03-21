@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package Vista;
+
+import java.awt.Dimension;
 
 /**
  *
@@ -17,6 +18,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
      */
     public FrmPrincipal() {
         initComponents();
+        Dimension ScreenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        this.setSize(ScreenSize);
+        this.setExtendedState(FrmPrincipal.MAXIMIZED_BOTH);
+
     }
 
     /**
@@ -44,7 +49,6 @@ public class FrmPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
